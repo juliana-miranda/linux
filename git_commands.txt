@@ -1,0 +1,39 @@
+Exemple for NZ bathy code, that will be put at git@github.com:metocean/msl_tools/dataIO_tools/
+
+Clone a repository to your computer:
+at /source:
+git clone git@github.com:metocean/msl_tools.git
+
+Then I moved grd2nc_bathy.py to /source/msl_tools/dataIO_tools/
+It should indicate there is a change to be commited (gst)
+
+---------------------------------------------------------------------???
+See the current configured remote repository for your fork:
+git remote -v
+
+To add the new upstream repository you've specified for your fork:
+git remote add upstream git@github.com:metocean/sandbox.git
+
+To verify it:
+git remote -v
+---------------------------------------------------------------------???
+
+See status, if there is anything to commit:
+gst or git status
+
+Add:
+git add grd2nc_bathy.py or git add * if you want to commit everything/many things were changed
+
+Commit (do git gst before to check):
+git commit -am "add script to convert grd files to nc including nc global attrs"
+
+Push:
+git push origin master
+
+Then I created a link to this file in my home:
+at /home/juliana/bathy/bathy2netcdf  ln -s /source/msl_tools/dataIO_tools/grd2nc_bathy.py
+
+!!! never have 2 copies of the same file in different places. Always ONE!
+
+*** Always start a repository manually at github website, and always create the README. 
+Then you clone it at you computer and do the steps above.
