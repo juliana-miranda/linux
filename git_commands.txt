@@ -28,6 +28,7 @@ Commit (do git gst before to check):
 git commit -am "add script to convert grd files to nc including nc global attrs"
 
 Push:
+git pull --rebase  origin master (better to always do this one, to not have merge conflits)
 git push origin master
 
 Then I created a link to this file in my home:
